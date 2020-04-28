@@ -15,7 +15,7 @@ public class Column {
      */
     private String name;
     /**
-     * 字段类型
+     * (数据库)字段类型
      */
     private String type;
     /**

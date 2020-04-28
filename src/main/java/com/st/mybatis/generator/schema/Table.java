@@ -24,4 +24,9 @@ public class Table {
      * 列
      */
     private List<Column> columns;
+
+    /**
+     * 主键
+     */
+    private List<PrimaryKey> primaryKeys;
 }

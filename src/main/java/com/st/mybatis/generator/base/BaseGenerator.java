@@ -1,6 +1,7 @@
 package com.st.mybatis.generator.base;
 
 import com.st.mybatis.generator.domain.GenConfig;
+import com.st.mybatis.generator.domain.GenParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,8 +13,23 @@ import org.slf4j.LoggerFactory;
  **/
 public abstract class BaseGenerator {
     private static final Logger log = LoggerFactory.getLogger(BaseGenerator.class);
-    protected static final String JAVA_SUFFIX = ".java";
-    protected static final String XML_SUFFIX = ".xml";
-    protected GenConfig genConfig;
+    private static final String JAVA_SUFFIX = ".java";
+    private static final String XML_SUFFIX = ".xml";
+    private GenConfig genConfig;
+    private GenParam genParam;
+
+    public BaseGenerator(){
+        super();
+    }
+
+    public void setGenConfig(GenConfig genConfig) {
+        this.genConfig = genConfig;
+    }
+
+    public void setGenParam(GenParam genParam) {
+        this.genParam = genParam;
+    }
+
+
 
 }

@@ -2,6 +2,7 @@ package com.st.mybatis.generator.domain;
 
 
 import com.st.mybatis.generator.enums.GenType;
+import lombok.Data;
 
 /**
  * @ClassName GenConfig
@@ -9,6 +10,7 @@ import com.st.mybatis.generator.enums.GenType;
  * @Author songtao
  * @Date 2020/4/22 0022 13:14
  **/
+@Data
 public class GenConfig {
     /**
      * 项目包名
