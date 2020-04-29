@@ -1,0 +1,7 @@
+/target/
+mybatis-generator.iml
+.project
+.classpath
+.settings/
+.idea
+logs/

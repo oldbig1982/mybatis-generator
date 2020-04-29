@@ -7,5 +7,5 @@ package com.st.mybatis.generator.utils;
  * @Date 2020/4/28 0028 18:24
  **/
 public class FileUtil {
-    public static
+
 }
