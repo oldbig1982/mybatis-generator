@@ -7,6 +7,8 @@ public enum GenType {
     VO,
     PO,
     DAO,
+    SERVICE,
+    API,
     BASE_MAPPER_XML,
     MAPPER_XML;
 
