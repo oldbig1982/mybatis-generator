@@ -18,14 +18,15 @@ public class Generator extends BaseGenerator {
 
     @Override
     public void run(String modual, Table table) {
-        //生成PO
-        if (containsGenType(GenType.PO)){
-
-
-        }
 
         //生成VO
         if (containsGenType(GenType.VO)){
+
+        }
+
+        //生成PO
+        if (containsGenType(GenType.PO)){
+            //校验是否需要生成，如果有PO，是否覆盖
 
         }
 
