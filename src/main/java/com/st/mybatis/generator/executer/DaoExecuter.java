@@ -7,4 +7,5 @@ package com.st.mybatis.generator.executer;
  * @Date 2020/4/22 0022 16:57
  **/
 public class DaoExecuter {
+
 }

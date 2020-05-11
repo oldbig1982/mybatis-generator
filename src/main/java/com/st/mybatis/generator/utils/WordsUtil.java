@@ -54,4 +54,12 @@ public class WordsUtil {
     }
 
 
+    /**
+     * 数据库字段转自定义java字段。
+     * @param field
+     * @return
+     */
+    public static String getBeautyInstanceName(String field){
+        return field;
+    }
 }
