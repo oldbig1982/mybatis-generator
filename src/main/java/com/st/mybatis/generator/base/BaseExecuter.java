@@ -16,7 +16,7 @@ import java.io.IOException;
  **/
 public abstract class BaseExecuter {
 
-    public abstract void build(Table table) throws IOException;
+    public abstract void build(Table table) throws Exception;
 
 
     protected static void buildClassComment(BufferedWriter bw, String prefix, String text) throws IOException {

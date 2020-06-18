@@ -1,5 +1,9 @@
 package com.st.mybatis.generator.utils;
 
+import com.st.mybatis.generator.schema.Column;
+import com.st.mybatis.generator.schema.Table;
+
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -55,5 +59,23 @@ public class GeneratorUtils {
             }
         }
         return false;
+    }
+
+
+    /**
+     * 取出表中字段的类型
+     * @param table
+     * @return
+     */
+    public static List<String> getTableColumnTypes(Table table) {
+        List<String> types = new ArrayList();
+        List<Column> columns = table.getColumns();
+        int size = columns.size();
+
+        for(int i = 0; i < size; ++i) {
+            Column column = (Column)columns.get(i);
+            types.add(column.getType());
+        }
+        return types;
     }
 }
